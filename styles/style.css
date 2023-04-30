@@ -20,6 +20,7 @@
 }
 
 .header__title {
+  margin: 0;
   margin-left: 64px;
   width: 730px;
   font-size: 102px;
@@ -29,13 +30,14 @@
 }
 
 .header__subtitle {
+  margin: 0;
   position: absolute;
   bottom: 30px;
   left: 64px;
   width: 388px;
   font-size: 18px;
   font-weight: normal;
-  line-height: 24px;
+  line-height: 25px;
   z-index: 2;
 }
 
@@ -46,6 +48,7 @@
 
 .header__main-illustration {
   position: absolute;
+  object-fit: cover;
   right: 0;
   bottom: 0;
   height: 608px;
@@ -69,7 +72,7 @@
 }
 
 .logo_place_header {
-  background-image: url(../images/logo_place_header.svg);
+  background-image: url("../images/logo_place_header.svg");
   position: absolute;
   top: 30px;
   left: 64px;
@@ -118,7 +121,7 @@
   line-height: 34px;
 }
 
-.digis {
+.digits {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,6 +147,8 @@
 }
 
 .table {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -165,6 +170,7 @@
 }
 
 .table__text {
+  margin: 0;
   font-size: 18px;
   font-weight: normal;
   line-height: 1.2;
@@ -176,8 +182,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f2f2f2;
-  height: 890px;
+  min-height: 890px;
+  background: left bottom / 867px 637px no-repeat  #f2f2f2 url("../images/feynman.png");
 }
 
 .feynman__title {
@@ -211,15 +217,6 @@
   z-index: 1;
 }
 
-.feynman__photo {
-  height: 637px;
-  width: 867px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-}
-
 .kaufman {
   position: relative;
   display: flex;
@@ -240,7 +237,7 @@
 }
 
 .table_theme_dark {
-  margin-bottom: 100px;
+  margin-bottom: 90px;
   z-index: 1;
 }
 
@@ -251,10 +248,13 @@
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
   position: absolute;
   width: 877px;
   height: 877px;
   right: -210px;
+  top: 0;
   z-index: 0;
 }
 
@@ -273,7 +273,7 @@
 }
 
 .logo_place_footer {
-  background-image: url(../images/logo_place_footer.svg);
+  background-image: url("../images/logo_place_footer.svg");
 }
 
 .footer__column {
