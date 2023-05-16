@@ -183,7 +183,7 @@
   flex-direction: column;
   align-items: center;
   min-height: 890px;
-  background: left bottom / 867px 637px no-repeat  #f2f2f2 url("../images/feynman.png");
+  background: left bottom / 867px 637px no-repeat #f2f2f2 url("../images/feynman.png");
 }
 
 .feynman__title {
@@ -248,7 +248,7 @@
 }
 
 .kaufman__triangle {
-  background-image: url(../images/kaufman-triangle.svg);
+  background-image: url("../images/kaufman-triangle.svg");
   background-size: cover;
   position: absolute;
   width: 877px;
