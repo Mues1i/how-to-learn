@@ -1,3 +1,60 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.techniques {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 920px;
+  margin: 0;
+  list-style: none;
+  gap: 60px 100px;
+}
+
+.cards__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  margin: 60px 40px 43px;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+
+.cards__title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.cards__description {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 23px;
+  text-align: center;
+  margin: 0;
+  margin-top: 16px;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -17,6 +74,7 @@
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .header__title {
@@ -24,7 +82,7 @@
   margin-left: 64px;
   width: 730px;
   font-size: 102px;
-  font-weight: 600px;
+  font-weight: 600;
   line-height: 96px;
   z-index: 2;
 }
@@ -43,7 +101,12 @@
 
 .header__link {
   text-decoration: none;
+  transition: opacity .3s linear;
   color: #2f80ed;
+}
+
+.header__link:hover {
+  opacity: .5;
 }
 
 .header__main-illustration {
@@ -65,6 +128,10 @@
   background-color: #2f80ed;
   z-index: 0;
   }
+
+.rotation {
+  animation: rotation 20s infinite linear;
+}
 
 .logo {
   height: 32px;
@@ -143,7 +210,7 @@
   line-height: 34px;
   text-align: center;
   width: 60%;
-  margin: auto;
+  margin: 0;
 }
 
 .table {
@@ -210,11 +277,16 @@
   font-weight: normal;
   line-height: 51px;
   text-decoration: none;
+  transition: opacity .3s linear;
   color: #2f80ed;
   position: absolute;
   top: 50%;
   right: 48px;
   z-index: 1;
+}
+
+.feynman__link:hover {
+  opacity: .5;
 }
 
 .kaufman {
@@ -313,11 +385,16 @@
 .footer__column-link {
   color: white;
   text-decoration: none;
+  transition: opacity .3s linear;
   display: flex;
   align-items: center;
   font-size: 18px;
   font-weight: normal;
   line-height: 30px;
+}
+
+.footer__column-link:hover {
+  opacity: .5;
 }
 
  .footer__author {
@@ -333,3 +410,131 @@
   height: 16px;
   width: 16px;
  }
+
+ .video {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ }
+
+ .video__iframes {
+  display: flex;
+  margin: 50px 0 -60px;
+  gap: 20px;
+ }
+
+ .video__iframe {
+  width: 515px;
+  height: 316px;
+  border: none;
+ }
+
+.oakley {
+  display: flex;
+  justify-content: center;
+  padding-top: 160px;
+  background-color: #f2f2f2;
+}
+
+.khan {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 105px;
+}
+
+.khan__container {
+  width: 80%;
+}
+
+.khan__author{
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 42px;
+  margin: 0;
+}
+
+.khan__title {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.khan__quote-author {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.khan__quote-author-subline {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.15;
+  margin: 10px 0 68px;
+}
+
+.khan__book-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.khan__book-pic {
+  width: 620px;
+  height: 608px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.khan__buy-link {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 42px;
+  text-decoration: none;
+  transition: opacity .3s linear;
+  color: #2f80ed;
+}
+
+.khan__buy-link:hover {
+  opacity: .5;
+}
+
+.khan__quote {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  margin: 50px 0 36px;
+  width: 790px;
+}
+
+.resources {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.resources__logo-zone {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  list-style: none;
+  padding: 0;
+  margin: 80px 0 217px;
+}
+
+.resources__link {
+  transition: opacity .3s linear;
+  display: flex;
+}
+
+.resources__link:hover {
+  opacity: .5;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
+  object-fit: contain;
+}
