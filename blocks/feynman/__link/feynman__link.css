@@ -3,14 +3,9 @@
   font-weight: normal;
   line-height: 51px;
   text-decoration: none;
-  transition: opacity .3s linear;
   color: #2f80ed;
   position: absolute;
   top: 50%;
   right: 48px;
   z-index: 1;
-}
-
-.feynman__link:hover {
-  opacity: .5;
 }

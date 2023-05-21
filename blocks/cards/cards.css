@@ -4,5 +4,5 @@
   width: 920px;
   margin: 0;
   list-style: none;
-  gap: 60px 100px;
+  column-gap: 100px;
 }
